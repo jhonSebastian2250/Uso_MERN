@@ -1,0 +1,28 @@
+@api = http://localhost:5000
+
+### obtener videos
+GET {{api}}/videos
+
+###obtener un video
+GET {{api}}/videos/61a78d1c4760ee79a3381a11
+
+### create video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url" : "https://www.youtube.com/watch?v=taXgRSJaiGQ",
+    "title": "Soy tribu",
+    "description": "libertad...."
+}
+
+###
+DELETE {{api}}/videos/61a7906d5abb30ec4a0489a8
+
+### actualizar video
+PUT {{api}}/videos/61a790ad5abb30ec4a0489ac
+Content-Type: application/json
+
+{
+    "title": "musica para mi"
+}
